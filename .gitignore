@@ -1,5 +1,5 @@
 /back/node_modules
-
+/back/.env
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
