@@ -1,4 +1,4 @@
-const models = require("../../database/models");
+const models = require(process.env.PWD + "/database/models");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 

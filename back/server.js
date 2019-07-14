@@ -1,6 +1,6 @@
 const express = require("express");
 require('dotenv').config(); // Loads .env variables as process.env.var_name
-const initRoutes = require("./routes");
+const initRoutes = require(process.env.PWD + "/routes");
 var bodyParser = require('body-parser');
 
 const app = express();

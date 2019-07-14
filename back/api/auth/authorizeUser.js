@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const models = require("../../database/models");
+const models = require(process.env.PWD + "/database/models");
 
 const privateKey = "secretAndPrivate";
 
