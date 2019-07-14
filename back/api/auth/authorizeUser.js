@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const models = require("../../models");
+const models = require("../../database/models");
 
 const privateKey = "secretAndPrivate";
 
