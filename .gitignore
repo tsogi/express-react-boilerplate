@@ -23,3 +23,5 @@
 /front/npm-debug.log*
 /front/yarn-debug.log*
 /front/yarn-error.log*
+
+/front/.env
