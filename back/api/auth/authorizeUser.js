@@ -1,10 +1,8 @@
 const jwt = require('jsonwebtoken');
 const models = require(process.env.PWD + "/database/models");
 
-const privateKey = "secretAndPrivate";
-
 module.exports = (req, res, next) => {
-	jwt.verify(req.body.token, privateKey, function(err, decoded) {
+	jwt.verify(req.body.token, process.env.JWT_PRIVATE_KEY, function(err, decoded) {
 	  if(err) {
 	  	res.send("Authorisation error: " + err);
 	  } else {
