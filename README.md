@@ -21,9 +21,11 @@ Root directory contains `back` and `front` folders which respectively contain **
 * `cd back`
   * `npm install`
   * configure `config/database.json`
+  * copy `.env.example` to `.env` and configure
   * `npm run nodemon` // starts express js server at localhost:3003 
 * `cd front`
   * `npm install`
+  * copy `.env.example` to `.env` and configure
   * `npm start` // starts react app at localhost:3001
   
 That's just it. Rest is already configured for you! Now you are good to leverage full power of awesome technologies included in the project.
@@ -34,3 +36,10 @@ That's just it. Rest is already configured for you! Now you are good to leverage
   * You don't have to worry about authorization, jwt token will be automatically injected in axios request and checked in routes using `authorizeUser` middleware.
   * If user is authorized response will be `Authorized User { Username: "John", Email: "john@gmail.com", ... }`
   * If user is not authorized response will be `Authorisation error: User isn't authorized`
+
+# Contribution
+All kind of contributions are highly appreciated. 
+
+For a list of features that needs to be added check out the issues with "Todo" label.
+
+For detailed instructions about contribution follow the [link](https://github.com/tsogi/express-react-boilerplate/wiki/Contribution-instructions)
