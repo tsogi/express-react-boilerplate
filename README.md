@@ -9,7 +9,7 @@ Root directory contains `back` and `front` folders which respectively contain **
 * `back`
   * `expressjs`
   * `sequelize`
-  * `jsonwebtoken` (jwt)
+  * `jsonwebtoken` // jwt
   
 * `front`
   * `reactjs`
@@ -27,3 +27,10 @@ Root directory contains `back` and `front` folders which respectively contain **
   * `npm start` // starts react app at localhost:3001
   
 That's just it. Rest is already configured for you! Now you are good to leverage full power of awesome technologies included in the project.
+
+## Usage
+* Add route in `back/routes/index.js` e.x. `app.get("/getUser", authorizeUser, (req, res) => { res.send("Authorized User " + req.User ) });`
+* Call the route from react app using axios1 e.x. `axios1.get("/getUser");`
+  * You don't have to worry about authorization, jwt token will be automatically injected in axios request and checked in routes using `authorizeUser` middleware.
+  * If user is authorized response will be `Authorized User { Username: "John", Email: "john@gmail.com", ... }`
+  * If user is not authorized response will be `Authorisation error: User isn't authorized`
