@@ -22,6 +22,7 @@ Root directory contains `back` and `front` folders which respectively contain **
   * `npm install`
   * configure `config/database.json`
   * copy `.env.example` to `.env` and configure
+  * `npx sequelize-cli db:migrate` // will create Users table
   * `npm run nodemon` // starts express js server at localhost:3003 
 * `cd front`
   * `npm install`
