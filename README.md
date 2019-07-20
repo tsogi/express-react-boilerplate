@@ -40,6 +40,6 @@ That's just it. Rest is already configured for you! Now you are good to leverage
 # Contribution
 All kind of contributions are highly appreciated. 
 
-For a list of features that needs to be added check out the issues with "Todo" label.
+For a list of features that needs to be added check out the issues section.
 
 For detailed instructions about contribution follow the [link](https://github.com/tsogi/express-react-boilerplate/wiki/Contribution-instructions).
