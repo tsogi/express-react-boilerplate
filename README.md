@@ -20,7 +20,6 @@ Root directory contains `back` and `front` folders which respectively contain **
 * Clone or download the repository
 * `cd back`
   * `npm install`
-  * configure `config/database.json`
   * copy `.env.example` to `.env` and configure
   * `npx sequelize-cli db:migrate` // will create Users table
   * `npm run nodemon` // starts express js server at localhost:3003 
@@ -43,4 +42,4 @@ All kind of contributions are highly appreciated.
 
 For a list of features that needs to be added check out the issues with "Todo" label.
 
-For detailed instructions about contribution follow the [link](https://github.com/tsogi/express-react-boilerplate/wiki/Contribution-instructions)
+For detailed instructions about contribution follow the [link](https://github.com/tsogi/express-react-boilerplate/wiki/Contribution-instructions).
