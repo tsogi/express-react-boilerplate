@@ -16,18 +16,19 @@ More details about structure on the [link](https://github.com/tsogi/express-reac
 * `front`
   * `reactjs`
   * `react-redux`
+  * `react-router-dom`
   * `axios`
 
 ## Installation
 * Clone or download the repository
 * `cd back`
   * `npm install`
-  * copy `.env.example` to `.env` and configure
+  * `cp .env.example .env` // copy `.env.example` to `.env` and edit `.env`
   * `npx sequelize-cli db:migrate` // will create Users table
   * `npm run nodemon` // starts express js server 
 * `cd front`
   * `npm install`
-  * copy `.env.example` to `.env` and configure
+  * `cp .env.example .env` // copy `.env.example` to `.env` and edit `.env`
   * `npm start` // starts react app
   
 That's just it. Rest is already configured for you! Now you are good to leverage full power of awesome technologies included in the project.
