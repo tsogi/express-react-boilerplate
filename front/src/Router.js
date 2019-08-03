@@ -4,11 +4,13 @@ import "./Router.css";
 import Index from "pages/Index.js";
 import Contact from "pages/Contact.js";
 import Language from "pages/Language.js";
+import Login from "pages/Login.js";
 
 export default function(){
 	return <Router>
 		<Route path="/" exact component={Index} />
 		<Route path="/contact" component={Contact} />
 		<Route path="/language" component={Language} />
+		<Route path="/login" component={Login} />
 	</Router>
 }
