@@ -6,5 +6,5 @@ module.exports = (app) => {
 	app.get("/", (req, res) => res.send("Hello, world"));
 	app.post("/register", register);
 	app.post("/login", login);
-	app.get("/user", authorizeUser, (req, res) => { res.send("Authorized User Email " + req.User.email ) });
+	app.post("/user", authorizeUser, (req, res) => { res.send("Authorized User Email " + req.User.email ) });
 }
