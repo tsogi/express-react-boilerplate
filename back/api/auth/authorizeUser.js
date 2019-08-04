@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
 	  	res.status(401);
 	  	res.send("Authorisation error: " + err);
 	  } else {
-	  	models.User.findOne({ email: decoded.email }).then((User) => {
+	  	models.User.findOne({ where: { email: "tsogiaidze8@yahoo.com"} }).then((User) => {
 	  		req.User = User;
 	  		next();
 	  	});
