@@ -1,8 +1,9 @@
 import axios from "axios";
+import store from "redux/store";
 
 const axios1 = axios.create({
 	baseURL: process.env.REACT_APP_API_URL + "/",
-	headers: { token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRzb2dpYWlkemU3QGdtYWlsLmNvbSIsImlhdCI6MTU2NDg2Nzg2MH0.UKflXpJX_DsoNxcGFqDyecnhSwX90IVClcf774bpv3Y'},
+	headers: { token: store.getState().user.token },
 });
 
 axios1.interceptors.response.use(function (response) {

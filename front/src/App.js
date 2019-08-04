@@ -2,10 +2,10 @@ import React from "react";
 import Router from "Router";
 import { Provider } from "react-redux";
 import { createStore } from 'redux';
-import rootReducer from "redux/reducers";
+import store from "redux/store";
 import "./App.css";
 
-const store = createStore(rootReducer);
+console.log(store.getState())
 
 export default function(){
 	return <Provider store={store}>
