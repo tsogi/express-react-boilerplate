@@ -5,6 +5,7 @@ import Index from "pages/Index.js";
 import Contact from "pages/Contact.js";
 import Language from "pages/Language.js";
 import Login from "pages/Login.js";
+import Register from "pages/Register";
 
 export default function(){
 	return <Router>
@@ -12,5 +13,6 @@ export default function(){
 		<Route path="/contact" component={Contact} />
 		<Route path="/language" component={Language} />
 		<Route path="/login" component={Login} />
+		<Route path="/register" component={Register} />
 	</Router>
 }

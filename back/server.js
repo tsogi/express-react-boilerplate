@@ -8,7 +8,8 @@ const app = express();
 
 app.use(cors()); // This allows cors requests
 
-app.use(bodyParser.urlencoded({ extended: true })) // for parsing POST data, application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true })) // for parsing POST data, application/x-www-form-urlencodedd
+app.use(bodyParser.json());
 
 initRoutes(app); // Loads routes
 
