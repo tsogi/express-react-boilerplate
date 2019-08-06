@@ -3,12 +3,12 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 module.exports = (req, res) => {
-	if(!req.body.email || !req.body.password) { 
+	if(!req.body.email || !req.body.password) {
 	 res.send({ success: false, msg: "Email and Password should be provided" });
 	 return;
 	}
-
 	models.User.findOne({ where: { email: req.body.email} }).then((User) => {
+										console.log(User);
 		if(User) {
 			bcrypt.compare(req.body.password, User.password, function(err, bcryptedPass) {
 				if(bcryptedPass) {
@@ -23,6 +23,8 @@ module.exports = (req, res) => {
 					res.send({ success: false, msg: "Login error " + err });
 				}
 			});
+		} else {
+			res.send({ success: false, msg: "User wasn't found" });
 		}
 	});
 }
